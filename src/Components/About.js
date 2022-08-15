@@ -37,7 +37,7 @@ const About = () => {
 					<p className='Tech-list'>
 						Languages:{' '}
 						<span className='bold'>
-							Javscript(ES6+), Typescript & C++
+							Javscript(ES6+ / Typescript), Python & C++
 						</span>
 					</p>
 					<p className='Tech-list'>

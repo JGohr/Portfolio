@@ -25,4 +25,18 @@
     color: transparent;
 }
 
+@media all and (max-width: 819px)
+{
+    #Projects-check-out
+    {
+        font-size: 2.5rem;
+    }
+}
 
+@media all and (max-width: 513px)
+{
+    #Projects-check-out
+    {
+        font-size: 1.8rem;
+    }
+}

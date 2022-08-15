@@ -11,20 +11,30 @@ const ProjectRightAligned = ({
 	imgurl,
 }) => {
 	return (
-		<div className='ProjectRightAligned'>
+		<div className='ProjectRightAligned' id='project'>
 			<img
 				className='project-img'
 				src={imgurl}
 				alt='Project Preview'
 			></img>
 			<div className='project-body-right'>
-				<p className='project-featured'>Featured Project</p>
-				<h1 className='project-title'>{title}</h1>
+				<p className='project-text' id='project-featured'>
+					Featured Project
+				</p>
+				<h1 className='project-text' id='project-title'>
+					{title}
+				</h1>
 				<div className='project-details'>
-					<p className='project-desc-right'>{desc}</p>
+					<p className='project-text' id='project-desc-right'>
+						{desc}
+					</p>
 					<div>
-						<p className='project-tech-used'>Technologies Used</p>
-						<p className='project-tech-right'>{tech}</p>
+						<p className='project-text' id='project-tech-used'>
+							Technologies Used
+						</p>
+						<p className='project-text' id='project-tech-right'>
+							{tech}
+						</p>
 					</div>
 				</div>
 				<div className='project-links-right'>

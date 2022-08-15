@@ -1,16 +1,15 @@
 .Contact
 {
-    padding: var(--padding);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100vh;
     background-color: var(--primary-dark);
+    display: flex;
+    height: auto;
+    padding: 33vh 8vw;
 }
 
 .Contact-form-container, .Contact-details
 {
-    width: 50vw;
+    width: 50%;
 }
 
 .Contact-form-container
@@ -24,26 +23,25 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
 #Contact-form
 {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    min-width: 75%;
 }
 
 #Contact-form > input
 {
-    height: 4vh;
-    font-family: Poppins-medium, sans-serif;
     background-color: var(--white);
-    border: none;
     border-radius: 4px;
+    border: none;
+    font-family: Poppins-medium, sans-serif;
     font-size: 1rem;
-    padding: 5px 10px;
+    height: 4vh;
     margin-bottom: 2vh;
+    padding: 5px 10px;
 }
 
 #Contact-touch
@@ -94,24 +92,85 @@
 
 #desc-input
 {
-    height: 10vh;
-    resize: none;
-    padding: 5px 10px;
-    font-family: Poppins-medium, sans-serif;
     border-radius: 4px;
     border: none;
+    font-family: Poppins-medium, sans-serif;
+    height: 10vh;
+    padding: 5px 10px;
+    resize: none;
 }
 
 #submit-btn
 {
-    margin-top: 2vh;
-    width: 25%;
-    height: 3.5vh;
     background-color: var(--accent-blue);
-    border: none;
     border-radius: 4px;
-    font-family: Poppins-bold;
+    border: none;
     color: var(--primary-dark);
+    font-family: Poppins-bold;
     font-size: 1.2rem;
+    height: 3.5vh;
+    margin-top: 2vh;
+    max-width: 25%;
+    min-width: 150px;
 }
 
+@media all and (max-width: 1080px)
+{
+    .Contact
+    {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+    }
+
+    .Contact-details
+    {
+        text-align: center;
+    }
+
+    .Contact-icons
+    {
+        justify-content: center;
+    }
+
+    #submit-btn
+    {
+        align-self: center;
+    }
+}
+
+@media all and (max-width: 746px)
+{
+    #Contact-touch
+    {
+        font-size: 1.7rem;
+    }
+
+    #Contact-intro
+    {
+        font-size: 1.2rem;
+    }
+
+    #Contact-email, #Contact-email > i
+    {
+        font-size: 1rem;
+    }
+
+    .Contact-icons
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 505px)
+{
+    #Contact-email > i
+    {
+        display: none;
+    }
+
+    #Contact-intro
+    {
+        font-size: .8rem;
+    }
+}

@@ -1,30 +1,54 @@
+.ProjectRightAligned, .ProjectLeftAligned
+{
+    display: flex;
+    align-items: center;
+}
+
 .project-details
 {
     background-color: black;
-    padding: 2rem;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     margin-bottom: 10px;
+    padding: 2rem;
 }
 
-.project-tech-used
+.project-img
+{
+    width: 50%;
+    height: 50%;
+    box-shadow: 1px 5px 0 black;
+}
+
+#project-desc
+{
+    width: 70%;
+}
+
+.project-links
+{
+    display: flex;
+    gap: .5rem;
+}
+
+#project-title
+{
+    font-family: Poppins-bold;
+    color: var(--white);
+}
+
+#project-tech-used
 {
     font-family: Poppins-medium, sans-serif;
     color: var(--accent-blue);
 }
 
-.project-featured
+#project-featured
 {
     font-family: Poppins-regular, sans-serif;
     color: var(--accent-blue);
-}
-
-.project-title
-{
-    font-family: Poppins-bold;
-    color: var(--white);
 }
 
 a
@@ -33,37 +57,69 @@ a
     color: var(--white);
 }
 
-.project
+@media all and (max-width: 1110px)
 {
-    display: flex;
-    align-items: center;
+    #project
+    {
+        flex-direction: column;
+        position: relative;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    #project > img 
+    {
+        display: none;
+    }
+
+    #project::before
+    {
+        content: "";
+        background-image: url('../images/raycaster image.jpg');
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: .4;
+    }
+
+    .project-text, .project-details, div[class^='project-links']
+    {
+        position: relative;
+    }
+
+    #project > *, p[id^="project-desc"]
+    {
+        text-align: center;
+    }
+
+    div[class^="project-links"]
+    {
+        justify-content: center;
+    }
 }
 
-.project-img
+@media all and (max-width: 700px)
 {
-    width: 43vw;
-    background-color: aqua;
-    height: 38vh;
-    box-shadow: 1px 5px 0 black;
-}
+    #project-title
+    {
+        font-size: 1.5rem;
+    }
 
-.project-desc
-{
-    width: 70%;
-    align-self: flex-end;
-}
+    p[id^='project-desc']
+    {
+        font-size: .8rem;
+    }
 
-.project-body
-{
-    width: 45%;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-}
+    p[id^='project-tech']
+    {
+        font-size: .8rem;
+    }
 
-.project-links
-{
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
+    div[class^='project-links']
+    {
+        font-size: .8rem;
+    }
 }
