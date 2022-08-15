@@ -1,0 +1,49 @@
+.ProjectRightAligned
+{
+    display: flex;
+    align-items: center;
+}
+
+.project-desc-right
+{
+    width: 70%;
+    align-self: flex-end;
+}
+
+.project-body-right
+{
+    width: auto;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+}
+
+.project-details
+{
+    background-color: black;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.project-tech-used
+{
+    font-family: Poppins-medium, sans-serif;
+    color: var(--accent-blue);
+}
+
+.project-tech-right, .project-desc-right, .project-links-right
+{
+    font-family: Poppins-regular, sans-serif;
+    color: var(--white);
+}
+
+.project-links-right
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}

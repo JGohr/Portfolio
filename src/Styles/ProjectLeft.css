@@ -1,0 +1,32 @@
+.ProjectLeftAligned
+{
+    display: flex;
+    align-items: center;
+}
+
+.project-desc-left
+{
+    width: 70%;
+    align-self: flex-start;
+}
+
+.project-body-left
+{
+    width: auto;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.project-tech-left, .project-desc-left, .project-links-left
+{
+    font-family: Poppins-regular, sans-serif;
+    color: var(--white);
+}
+
+.project-links-left
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}

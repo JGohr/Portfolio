@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'), url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: local('Poppins-Medium'), url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Poppins-Regular'), url('../fonts/Poppins-Regular.ttf');
+}
+
+*
+{
+  --primary-dark: #0A0A0A;
+  --project-desc: #000000;
+  --accent-blue: #4781ED;
+  --white: #f7f7f7;
+  --padding: 0 8vw;
+  --gradient: linear-gradient(90deg, rgba(253,126,20,1) 0%, rgba(232,62,140,1) 50%, rgba(102,16,242,1) 100%);
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar
+{
+  display: none;
+}
+

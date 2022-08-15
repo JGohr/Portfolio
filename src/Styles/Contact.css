@@ -1,0 +1,117 @@
+.Contact
+{
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-dark);
+}
+
+.Contact-form-container, .Contact-details
+{
+    width: 50vw;
+}
+
+.Contact-form-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#Contact-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+#Contact-form > input
+{
+    height: 4vh;
+    font-family: Poppins-medium, sans-serif;
+    background-color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-bottom: 2vh;
+}
+
+#Contact-touch
+{
+    font-family: Poppins-bold, sans-serif;
+    font-size: 4rem;
+    color: var(--white);
+}
+
+#Contact-intro
+{
+    font-family: Poppins-medium, sans-serif;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+
+#Contact-form > label
+{
+    font-family: Poppins-medium, sans-serif;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.1rem;
+}
+
+#Contact-email
+{
+    color: var(--white);
+    font-family: Poppins-regular, sans-serif;
+    font-size: 1.5rem;
+}
+
+#Contact-email > i
+{
+    margin-right: .7rem;
+    font-size: 1.5rem;
+}
+
+.Contact-icons
+{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#desc-input
+{
+    height: 10vh;
+    resize: none;
+    padding: 5px 10px;
+    font-family: Poppins-medium, sans-serif;
+    border-radius: 4px;
+    border: none;
+}
+
+#submit-btn
+{
+    margin-top: 2vh;
+    width: 25%;
+    height: 3.5vh;
+    background-color: var(--accent-blue);
+    border: none;
+    border-radius: 4px;
+    font-family: Poppins-bold;
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+}
+

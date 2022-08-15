@@ -1,0 +1,63 @@
+.About
+{
+    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-dark);
+    padding: var(--padding);
+}
+
+.About-details, .About-tech
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.details, .tech-details
+{
+    max-width: 50%;
+}
+
+.tech-details
+{
+    text-align: right;
+}
+
+#About-heading, #Tech-heading
+{
+    font-family: Poppins-medium, sans-serif;
+    font-size: 1.8rem;
+}
+
+#About-me, #Tech-i-use
+{
+    font-family: Poppins-bold, sans-serif;
+    font-size: 4rem;
+}
+
+#About-desc, .Tech-list
+{
+    font-family: Poppins-regular, sans-serif;
+    font-size: 1.3rem;
+}
+
+#About-heading, .gradient-text, #Tech-heading
+{
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.bold
+{
+    font-weight: bold;
+    color: black;
+}
+
+.Tech-list
+{
+    margin-bottom: 1vh;
+}

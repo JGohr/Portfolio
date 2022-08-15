@@ -1,0 +1,8 @@
+{
+  "short_name": "Joshua Gohr Portfolio",
+  "name": "Joshua Gohr Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,28 @@
+.Projects
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: var(--padding);
+    gap: 8vh;
+}
+
+#Projects-check-out
+{
+    font-family: Poppins-bold, sans-serif;
+    font-size: 4rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    align-self: center;
+}
+
+#my-work
+{
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+

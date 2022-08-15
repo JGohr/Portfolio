@@ -1,0 +1,29 @@
+.Header
+{
+    align-items: center;
+    background-color: var(--primary-dark);
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+#Header-logo
+{
+    color: white;
+    font-family: Poppins-bold, sans-serif;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.Header-icons
+{
+    display: flex;
+    gap: 2vw;
+}
+
+.Header-icons > a > i
+{
+    color: white;
+    font-size: 2rem;
+}
