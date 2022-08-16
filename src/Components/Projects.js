@@ -5,7 +5,7 @@ import ProjectLeftAligned from './ProjectLeftAligned';
 
 const Projects = () => {
 	return (
-		<div className='Projects'>
+		<div id='projects' className='Projects'>
 			<h1 id='Projects-check-out'>
 				Check Out <span id='my-work'>My Work.</span>
 			</h1>

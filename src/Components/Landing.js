@@ -1,5 +1,6 @@
 import '../Styles/Landing.css';
 import landingIMG from '../images/landing_graphic.svg';
+import { Link } from 'react-scroll';
 
 const Landing = () => {
 	return (
@@ -20,17 +21,17 @@ const Landing = () => {
 				<button id='Landing-button'>View My Work</button>
 			</div>
 			<div className='Landing-img'>
-				<a href='' id='Landing-project'>
+				<Link to='projects' smooth={true} id='Landing-project'>
 					<h1>Projects</h1>
-				</a>
+				</Link>
 				<img
 					id='Landing-hero-svg'
 					src={landingIMG}
 					alt='Pixel Art Josh'
 				></img>
-				<a href='' id='Landing-about-me'>
+				<Link to='about' smooth={true} id='Landing-about-me'>
 					<h1>About Me</h1>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

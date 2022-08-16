@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    padding: 8vh 8vw;
+    padding: 15vh 8vw;
+    height: 100vh;
 }
 
 .About-details, .About-tech
