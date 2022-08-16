@@ -3,9 +3,12 @@
     align-items: center;
     background-color: var(--primary-dark);
     display: flex;
-    height: 10vh;
+    height: 7vh;
     justify-content: space-between;
     padding: var(--padding);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #Header-logo
@@ -13,7 +16,7 @@
     color: white;
     font-family: Poppins-bold, sans-serif;
     font-size: 1.5rem;
-    cursor: default;
+    cursor: pointer;
 }
 
 .Header-icons

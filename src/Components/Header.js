@@ -1,9 +1,12 @@
 import '../Styles/Header.css';
+import { Link } from 'react-scroll';
 
 const Header = () => {
 	return (
 		<div className='Header'>
-			<p id='Header-logo'>Joshua Gohr.</p>
+			<Link to='app' smooth={true}>
+				<p id='Header-logo'>Joshua Gohr.</p>
+			</Link>
 			<div className='Header-icons'>
 				<a href='https://github.com/JGohr'>
 					<i class='fa-brands fa-square-github'></i>

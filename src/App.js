@@ -7,7 +7,7 @@ import Contact from './Components/Contact';
 
 function App() {
 	return (
-		<div className='App'>
+		<div id='app' className='App'>
 			<Header />
 			<Landing />
 			<About />

@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const Landing = () => {
 	return (
-		<div className='Landing'>
+		<div id='landing' className='Landing'>
 			<div className='Landing-greeting'>
 				<p id='Landing-intro'>Oh hey there, I'm</p>
 				<h1 id='Landing-name'>Joshua Gohr.</h1>
@@ -18,7 +18,9 @@ const Landing = () => {
 					<br />
 					Full Stack Web Development
 				</p>
-				<button id='Landing-button'>View My Work</button>
+				<Link to='contact' smooth={true}>
+					<button id='Landing-button'>Contact Me</button>
+				</Link>
 			</div>
 			<div className='Landing-img'>
 				<Link to='projects' smooth={true} id='Landing-project'>

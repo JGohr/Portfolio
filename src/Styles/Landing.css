@@ -4,7 +4,7 @@
     color: var(--white);
     display: flex;
     font-family: Poppins-bold, sans-serif;
-    height: 90vh;
+    height: 93vh;
     justify-content: space-between;
     padding: var(--padding);
 }
@@ -48,6 +48,7 @@
     font-family: Poppins-bold, sans-serif;
     padding: .4rem;
     min-width: 25%;
+    cursor: pointer;
 }
 
 #Landing-about-me
