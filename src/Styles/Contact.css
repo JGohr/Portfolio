@@ -160,6 +160,11 @@
     {
         font-size: 1.5rem;
     }
+
+    .Contact
+    {
+        padding: 15vh 8vw;
+    }
 }
 
 @media all and (max-width: 505px)
