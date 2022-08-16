@@ -15,6 +15,8 @@
     padding: 2rem;
 }
 
+
+
 .project-img
 {
     width: 50%;
@@ -98,6 +100,16 @@ a
     div[class^="project-links"]
     {
         justify-content: center;
+    }
+
+    div[class^="project-body"]
+    {
+        width: 100%;
+    }
+
+    .project-details
+    {
+        margin: 0 10vw;
     }
 }
 
