@@ -90,6 +90,18 @@
     margin-top: 1rem;
 }
 
+.Contact-icons > a > i
+{
+    transition: ease-in 0.2s;
+}
+
+.Contact-icons > a > i:hover
+{
+    background-clip: text;
+    background-image: var(--gradient);
+    color: transparent;
+}
+
 #desc-input
 {
     border-radius: 4px;
