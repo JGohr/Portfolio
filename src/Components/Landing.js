@@ -39,8 +39,8 @@ const Landing = () => {
 					<br />
 					Full Stack Web Development
 				</p>
-				<Link to='contact' smooth={true}>
-					<button id='Landing-button'>Contact Me</button>
+				<Link to='projects' smooth={true}>
+					<button id='Landing-button'>See My Work</button>
 				</Link>
 			</div>
 			<div className='Landing-img'>

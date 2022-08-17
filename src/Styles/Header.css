@@ -41,7 +41,7 @@
     transition: ease-in 0.1s;
 }
 
-.Header-icons > a > i:hover
+.Header-icons > a > i:hover, #Header-contact:hover
 {
     background-clip: text;
     background-image: var(--gradient);
@@ -57,8 +57,73 @@
     cursor: pointer;
 }
 
-@media all and (max-width: 502px)
+#Hamburger-icon
 {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.menu
+{
+    visibility: hidden;
+}
+
+.menu > a > .hidden
+{
+    visibility: hidden;
+}
+
+#social-github
+{
+    position: absolute;
+}
+
+.menu > a > #social-github.show
+{
+    transform: translateX(-60px);
+}
+
+#social-linkedin
+{
+    position: absolute;
+}
+
+.menu > a > #social-linkedin.show
+{
+    transform: translateY(60px);
+}
+
+.menu > a > .fa-brands
+{
+    transition: all 0.3s ease-in-out;
+}
+
+.menu:nth-child(1), .menu:nth-child(2)
+{
+    font-size: 2rem;
+    color: white;
+}
+
+@media all and (max-width: 700px)
+{
+    .Header-icons
+    {
+        display: none;
+    }
+
+    .menu
+    {
+        visibility: visible;    
+    }
+
+    #Hamburger-icon
+    {
+        display: inline;
+    }
+ 
     #Header-logo
     {
         font-size: 1.2rem;

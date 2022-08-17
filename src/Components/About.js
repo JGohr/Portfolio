@@ -37,13 +37,13 @@ const About = () => {
 					<p className='Tech-list'>
 						Languages:{' '}
 						<span className='bold'>
-							Javscript(ES6+ / Typescript), Python & C++
+							Javscript(ES6+ / Typescript), C# & C++
 						</span>
 					</p>
 					<p className='Tech-list'>
 						Frameworks/Utilities:{' '}
 						<span className='bold'>
-							React, NodeJS, MongoDB & SASS
+							React, NodeJS, MongoDB & Express
 						</span>
 					</p>
 					<p className='Tech-list'>
