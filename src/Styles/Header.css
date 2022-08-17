@@ -83,7 +83,7 @@
 
 .menu > a > #social-github.show
 {
-    transform: translateX(-60px);
+    transform: translateX(-65px) translateY(-9px);
 }
 
 #social-linkedin
@@ -93,12 +93,15 @@
 
 .menu > a > #social-linkedin.show
 {
-    transform: translateY(60px);
+    transform: translateX(-10px) translateY(52px);
 }
 
 .menu > a > .fa-brands
 {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    padding: 10px;
+    background-color: var(--accent-blue);
+    border-radius: 50%;
 }
 
 .menu:nth-child(1), .menu:nth-child(2)
