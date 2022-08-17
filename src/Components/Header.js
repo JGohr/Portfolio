@@ -8,11 +8,14 @@ const Header = () => {
 				<p id='Header-logo'>Joshua Gohr</p>
 			</Link>
 			<div className='Header-icons'>
+				<Link to='contact' smooth={true}>
+					<p id='Header-contact'>Contact Me</p>
+				</Link>
 				<a href='https://github.com/JGohr'>
-					<i class='fa-brands fa-square-github'></i>
+					<i className='fa-brands fa-square-github'></i>
 				</a>
 				<a href='https://www.linkedin.com/in/joshua-g-36bb3213b/'>
-					<i class='fa-brands fa-linkedin'></i>
+					<i className='fa-brands fa-linkedin'></i>
 				</a>
 			</div>
 		</div>

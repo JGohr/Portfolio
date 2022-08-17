@@ -1,8 +1,29 @@
 import '../Styles/Landing.css';
 import landingIMG from '../images/landing_graphic.svg';
 import { Link } from 'react-scroll';
+import { useEffect } from 'react';
 
 const Landing = () => {
+	useEffect(() => {
+		const landingButton = document.querySelector('#Landing-button');
+
+		const observer = new IntersectionObserver((entries) => {
+			const entry = entries[0];
+
+			const headerContact = document.getElementById('Header-contact');
+
+			if (entry.intersectionRatio <= 0.01) {
+				headerContact.style.visibility = 'visible';
+				headerContact.style.opacity = 1;
+			} else if (entry.intersectionRatio >= 0.01) {
+				headerContact.style.opacity = 0;
+				headerContact.style.visibility = 'hidden';
+			}
+		});
+
+		observer.observe(landingButton);
+	}, []);
+
 	return (
 		<div id='landing' className='Landing'>
 			<div className='Landing-greeting'>

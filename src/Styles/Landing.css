@@ -7,6 +7,7 @@
     height: 93vh;
     justify-content: space-between;
     padding: var(--padding);
+    position: relative;
 }
 
 .Landing-img
