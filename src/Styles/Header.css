@@ -17,6 +17,14 @@
     font-family: Poppins-bold, sans-serif;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: ease-out 0.1s;
+}
+
+#Header-logo:hover
+{
+    background-clip: text;
+    background-image: var(--gradient);
+    color: transparent;
 }
 
 .Header-icons
@@ -29,4 +37,20 @@
 {
     color: white;
     font-size: 2rem;
+    transition: ease-in 0.1s;
+}
+
+.Header-icons > a > i:hover
+{
+    background-clip: text;
+    background-image: var(--gradient);
+    color: transparent;
+}
+
+@media all and (max-width: 502px)
+{
+    .Header-icons
+    {
+        gap: 5vw;
+    }
 }

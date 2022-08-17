@@ -7,7 +7,7 @@ const Landing = () => {
 		<div id='landing' className='Landing'>
 			<div className='Landing-greeting'>
 				<p id='Landing-intro'>Oh hey there, I'm</p>
-				<h1 id='Landing-name'>Joshua Gohr.</h1>
+				<h1 id='Landing-name'>Joshua Gohr</h1>
 				<p id='Landing-para'>
 					Software Developer bringing ideas to life in
 					<br />

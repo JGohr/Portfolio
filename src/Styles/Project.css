@@ -15,7 +15,17 @@
     padding: 2rem;
 }
 
+div[class^='project-links'] > span > a
+{
+    transition: ease-out 0.1s;
+}
 
+div[class^='project-links'] > span > a:hover
+{
+    background-clip: text;
+    background-image: var(--gradient);
+    color: transparent;
+}
 
 .project-img
 {
@@ -27,12 +37,6 @@
 #project-desc
 {
     width: 70%;
-}
-
-.project-links
-{
-    display: flex;
-    gap: .5rem;
 }
 
 #project-title

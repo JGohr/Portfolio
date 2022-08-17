@@ -11,11 +11,6 @@
 
 .Landing-img
 {
-    width: 50%;
-}
-
-.Landing-img
-{
     align-self: center;
     display: flex;
     height: 45vh;
@@ -23,7 +18,7 @@
     margin-bottom: 10vh;
     position: relative;
     /*Being used to maintain position of the elements*/
-    min-width: 807px;
+    min-width: 600px;
 }
 
 .Landing-greeting
@@ -42,13 +37,20 @@
 #Landing-button
 {
     background-color: var(--accent-blue);
-    border-radius: 2px;
+    box-shadow:  0 5px 0 var(--button-bg);
+    border-radius: 4px;
     border: none;
-    color: var(--primary-dark);
+    color: var(--white);
     font-family: Poppins-bold, sans-serif;
     padding: .4rem;
     min-width: 25%;
     cursor: pointer;
+}
+
+#Landing-button:active
+{
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
 #Landing-about-me
@@ -56,34 +58,39 @@
     font-size: 1.5rem;
     min-width: 243px;
     position: absolute;
-    top: 95%;
+    top: 350px;
     cursor: pointer;
 }
 
 #Landing-hero-svg
 {
     position: absolute;
-    right: 25%;
+    right: 150px;
     top: 20%;
 }
 
 #Landing-project
 {
     font-size: 1.5rem;
-    left: 0;
+    right: 85%;
     position: absolute;
-    top: 5%;
+    top: 10%;
     cursor: pointer;
+}
+
+#Landing-para
+{
+    font-size: 1.5rem;
 }
 
 #Landing-intro, #Landing-project, #Landing-about-me
 {
-    background-clip: text;
     background-image: var(--gradient);
     color: transparent;
+    background-clip: text;
 }
 
-@media all and (max-width: 1671px) {
+@media all and (max-width: 1490px) {
     .Landing-img
     {
         display: none;

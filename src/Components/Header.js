@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<div className='Header'>
 			<Link to='app' smooth={true}>
-				<p id='Header-logo'>Joshua Gohr.</p>
+				<p id='Header-logo'>Joshua Gohr</p>
 			</Link>
 			<div className='Header-icons'>
 				<a href='https://github.com/JGohr'>

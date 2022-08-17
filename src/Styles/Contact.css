@@ -104,14 +104,21 @@
 {
     background-color: var(--accent-blue);
     border-radius: 4px;
+    box-shadow:  0 5px 0 var(--button-bg);
     border: none;
-    color: var(--primary-dark);
+    color: var(--white);
     font-family: Poppins-bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 3.5vh;
     margin-top: 2vh;
     max-width: 25%;
     min-width: 150px;
+}
+
+#submit-btn:active
+{
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
 @media all and (max-width: 1080px)
