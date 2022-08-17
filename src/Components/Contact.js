@@ -1,6 +1,36 @@
 import '../Styles/Contact.css';
+import emailjs from '@emailjs/browser';
+import { useEffect } from 'react';
 
 const Contact = () => {
+	function sendEmail(event) {
+		event.preventDefault();
+
+		emailjs
+			.sendForm(
+				'service_lnjstfm',
+				'template_zm1qh9h',
+				document.getElementById('Contact-form')
+			)
+			.then(
+				function () {
+					console.log('SUCCESS!');
+				},
+				function (error) {
+					console.log('FAILED...', error);
+				}
+			);
+	}
+
+	useEffect(() => {
+		emailjs.init('rkUND9_gVvQpyN4ly');
+		document
+			.getElementById('Contact-form')
+			.addEventListener('submit', (e) => {
+				sendEmail(e);
+			});
+	}, []);
+
 	return (
 		<div id='contact' className='Contact'>
 			<div className='Contact-details'>
@@ -25,18 +55,21 @@ const Contact = () => {
 						id='full-name-input'
 						required
 						placeholder='Angela Small'
+						name='from_name'
 					></input>
 					<label htmlFor='email-input'>E-Mail</label>
 					<input
 						id='email-input'
 						required
 						placeholder='ASmall@yourcompany.com'
+						name='from_email'
 					></input>
 					<label htmlFor='desc-input'>Message</label>
 					<textarea
 						id='desc-input'
 						required
 						placeholder='Hey Josh, checked out your portfolio...'
+						name='message'
 					></textarea>
 					<button id='submit-btn' type='submit'>
 						Send
